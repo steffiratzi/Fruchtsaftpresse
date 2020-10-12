@@ -1,4 +1,21 @@
-﻿<div class="top-row pl-4 navbar navbar-dark">
+﻿@*<nav class="navbar navbar-light" style="background-color: #c4801c;">
+    <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Startseite <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Herstellungsprozess</a>
+                <a class="nav-item nav-link" href="#">Sorten von Fruchtsäften</a>
+                <a class="nav-item nav-link" href="#">Kontaktdaten</a>
+            </div>
+        </div>
+    </div>
+</nav>*@
+    
+<div class="top-row pl-4 navbar">
     <a class="navbar-brand" href="">Fruchtsaftpresse</a>
     <button class="navbar-toggler" @onclick="ToggleNavMenu">
         <span class="navbar-toggler-icon"></span>
@@ -9,17 +26,22 @@
     <ul class="nav flex-column">
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
+                <span class="oi oi-home" aria-hidden="true"></span> Startseite
             </NavLink>
         </li>
         <li class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
+            <NavLink class="nav-link" href="manufactoringProcess">
+                <span class="oi oi-plus" aria-hidden="true"></span> Herstellungsprozess
             </NavLink>
         </li>
         <li class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+            <NavLink class="nav-link" href="sortOfFruitJuice">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Sorten der Fruchtsäfte
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="contactDetails">
+                <span class="oi oi-person" aria-hidden="true"></span> Kontaktdaten
             </NavLink>
         </li>
     </ul>
